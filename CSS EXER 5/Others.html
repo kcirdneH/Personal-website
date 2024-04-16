@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Others</title>
+    <style>
+        body {
+            font-family: 'Product Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            background-color: #e3bebeb0; /* Default background color */
+            transition: background-color 0.3s;
+        }
+        nav {
+            background-color: rgb(255, 255, 255); /* Fallback color */
+            padding: 10px;
+            text-align: center; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the nav appears above other content */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box-shadow */
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 400px; /* Adjust width as needed */
+            margin: 60px auto 20px; /* Adjust margins as needed */
+            padding: 0 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Fallback color */
+            border: 2px solid rgb(0, 0, 0);
+            padding: 1px;
+            border-radius: 25px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            opacity: 0; /* Initially hide content */
+            animation: fadeIn 1s forwards; /* Apply fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .content {
+            padding: 20px;
+            border-radius: 5%;
+        }
+        .feature {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .feature img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+        .feature p {
+            margin-top: 10px;
+        }
+        button {
+            background-color: #2f2f2f; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px; /* Add margin-top to create space between the button and the text */
+            cursor: pointer;
+            border-radius: 5px; /* Add border-radius for rounded corners */
+            border: 2px solid #2b2b2b; /* Add border */
+        }
+
+        button:hover {
+            background-color: #3c3c3c; /* Darker green */
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="static-link">Home</a>
+        <a href="about.html" class="static-link">About</a>
+        <a href="Others.html">Others</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <center> 
+                <h2>About him</h2>
+            </center>
+            <br>
+            <br>
+            <h1>His Socials</h1>
+          <p>Facebook: 
+            <a href="https://www.facebook.com/hagakiii">Hendrick Bancale </a></p>
+            <p>Instagram: 
+                <a href="https://www.instagram.com/hndy.exe">hndy.exe</a></p>
+                <p>X: 
+                    <a href="https://twitter.com/heresteusx">@heresteusx</a></p>
+                    <p>Spotify: 
+                        <a href="https://sptfy.com/syntesthia">syntesthia</a></p>
+                       
+
+            
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            const hue = Math.abs(scrollPosition / (document.body.offsetHeight - window.innerHeight)) * 360;
+            document.body.style.backgroundColor = `hsl(${hue}, 50%, 90%)`;
+        });
+    </script>
+</body>
+</html>

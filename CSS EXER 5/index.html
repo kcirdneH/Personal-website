@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  position: relative;
+  height: 100vh; /* Change height to 100vh for full viewport height */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+}
+
+.bg-image {
+  background: url(bg3.png) no-repeat center; 
+  background-size: cover; /* Change background-size to cover */
+  height: 100%;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0; /* Initially make the text invisible */
+  animation: fadeIn 2s ease forwards; /* Add animation for fading in */
+}
+
+.hero-text h1 {
+  font-size: 100px;
+  font-family: 'product sans', sans-serif;
+  text-shadow: 10px 10px 10px black; /* Add text outline */
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'product sans', sans-serif;
+  text-shadow: 2px 2px 4px black; /* Add text outline */
+  margin-bottom: 20px; /* Adjust margin between h2 and h1 */
+}
+
+button {
+  background-color: #2f2f2f; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px; /* Add margin-top to create space between the button and the text */
+  cursor: pointer;
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  border: 2px solid #2b2b2b; /* Add border */
+}
+
+button:hover {
+  background-color: #3c3c3c; /* Darker green */
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="dark-overlay"></div>
+  <div class="bg-image"></div>
+  <div class="hero-text">
+    <h2>Hello</h2>
+    <h1>I am Jake Hendrick</h1>
+    <a href="home.html"> 
+        <button>Get to know me!</button>
+    </a>
+   
+  </div>
+</div>
+
+</body>
+</html>
